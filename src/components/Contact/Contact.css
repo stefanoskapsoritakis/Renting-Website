@@ -40,7 +40,7 @@
     font-weight: 600;
 }
 
-.mode >:nth-child(1) {
+.mode>:nth-child(1) {
     width: 100%;
     gap: 1.6rem;
 
@@ -50,12 +50,37 @@
     font-size: 1.1rem;
     font-weight: 600;
 }
-.mode:hover{
+
+.mode:hover {
     scale: 1.1;
     box-shadow: var(--shadow);
 }
-.mode .button:hover{
+
+.mode .button:hover {
     background: var(--blue-gradient);
     color: white;
     scale: 0.8;
+}
+
+@media (max-width:1024px) {
+    .c-container {
+        flex-direction: column;
+    }
+    .c-left{
+        width: 100%;
+    }
+    .c-right {
+        justify-content: center;
+    }
+
+    .contactModes {
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+    .mode{
+        width: 100%;
+    }
 }
