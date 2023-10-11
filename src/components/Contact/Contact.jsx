@@ -3,6 +3,7 @@ import "./Contact.css";
 import { MdCall } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
 import { HiChatBubbleBottomCenter } from "react-icons/hi2";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
@@ -50,14 +51,14 @@ const Contact = () => {
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <MdEmail size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">655-5456-455</span>
+                    <span className="primaryText">E-Mail Us</span>
+                    <span className="secondaryText">mail@mail.com</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call Now</div>
+                <div className="flexCenter button">E-Mail Now</div>
               </div>
 
               {/* fouth mode */}
@@ -76,6 +77,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        
         {/* right side */}
         <div className="c-right">
           <div className="image-container">
